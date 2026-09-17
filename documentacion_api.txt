@@ -1,0 +1,27 @@
+====================================================================
+DOCUMENTACIÓN DE API REST - SISTEMA DE MONITOREO DE SALUD ANIMAL
+====================================================================
+
+1. Listar Animales Registrados
+   - Endpoint: /api/animales
+   - Método: GET
+   - Descripción: Retorna un listado JSON con todos los animales registrados y su estado de salud.
+   - Respuesta Exitosa: 200 OK
+
+2. Registrar Nuevo Animal
+   - Endpoint: /api/animales
+   - Método: POST
+   - Descripción: Permite dar de alta un nuevo animal en el sistema de monitoreo.
+   - Parámetros Body (JSON o Form-data):
+     * nombre (String)
+     * especie (String)
+     * estadoSalud (String)
+   - Respuesta Exitosa: 201 Created
+
+3. Autenticación de Operario (Login)
+   - Endpoint: /api/auth/login
+   - Método: POST
+   - Descripción: Valida las credenciales de acceso al sistema.
+   - Parámetros Body:
+     * usuario (String)
+     * password (String)
