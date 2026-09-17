@@ -1,1 +1,0 @@
-# Sistema-de-monitoreo-salud-animal
